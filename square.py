@@ -2,8 +2,8 @@ from __future__ import annotations
 
 import dataclasses
 
-from v5.cell import Cell
-from v5.position import Position
+from cell import Cell
+from position import Position
 
 
 @dataclasses.dataclass(frozen=True)

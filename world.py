@@ -1,9 +1,9 @@
 from __future__ import annotations
 from typing import Any, List
 
-from v5.cell import Cell
-from v5.grid import Grid
-from v5.tests.test_rules import GameOfLifeRules
+from cell import Cell
+from grid import Grid
+from tests.test_rules import GameOfLifeRules
 
 
 class World:

@@ -1,8 +1,8 @@
 import unittest
 
-from v5.cell import AliveCell, DeadCell, Cell
-from v5.square import Square
-from v5.position import Position
+from cell import AliveCell, DeadCell, Cell
+from square import Square
+from position import Position
 
 
 class GameOfLifeRules:

@@ -1,7 +1,7 @@
 from __future__ import annotations
 import dataclasses
 
-from v4.direction import Direction
+from direction import Direction
 
 
 @dataclasses.dataclass(frozen=True)

@@ -2,11 +2,11 @@ from __future__ import annotations
 
 from typing import List
 
-from v5.cell import Cell, DeadCell
-from v5.dimension import Dimension
-from v5.neighborhood import NeighborhoodPositionsCollection, Neighborhood
-from v5.position import Position
-from v5.square import Square
+from cell import Cell, DeadCell
+from dimension import Dimension
+from neighborhood import NeighborhoodPositionsCollection, Neighborhood
+from position import Position
+from square import Square
 
 
 class DeadGridBuilder:

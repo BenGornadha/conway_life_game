@@ -1,7 +1,7 @@
 from typing import Optional
 
-from v5.direction import Direction
-from v5.position import Position
+from direction import Direction
+from position import Position
 from abc import ABC, abstractmethod
 
 class Cell(ABC):

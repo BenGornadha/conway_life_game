@@ -1,9 +1,9 @@
 import unittest
 
-from v5.cell import AliveCell
-from v5.dimension import Dimension
-from v5.grid import Grid
-from v5.position import Position
+from cell import AliveCell
+from dimension import Dimension
+from grid import Grid
+from position import Position
 
 
 class MyTestCase(unittest.TestCase):

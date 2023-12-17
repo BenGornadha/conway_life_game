@@ -3,9 +3,9 @@ from __future__ import annotations
 import dataclasses
 from typing import Optional, Set
 
-from v5.cell import Cell
-from v5.direction import Directions
-from v5.position import Position
+from cell import Cell
+from direction import Directions
+from position import Position
 
 
 @dataclasses.dataclass
