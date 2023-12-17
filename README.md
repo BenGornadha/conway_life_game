@@ -1,4 +1,4 @@
-# conway_life_game
+# Conway life game
 
 My own implementation of famous Conway's Game of life. 
 
@@ -9,3 +9,5 @@ This code was made using TDD respecting the three steps : RED => GREEN => REFACT
 Regarding the interface I absolutely have no skills so I used Pygame which was for me the simplest to obtain results.
 
 ![img.png](resources/img.png)
+
+Feel free to ask any questions or comment anything that would make me a better developer. 
