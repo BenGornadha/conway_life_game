@@ -2,6 +2,7 @@ from __future__ import annotations
 from typing import Any, List
 
 from cell import Cell
+from collections_rows_of_cells import CollectionRowOfCells
 from grid import Grid
 from tests.test_rules import GameOfLifeRules
 
@@ -12,8 +13,8 @@ class World:
         self._grid = grid
         self._rules = GameOfLifeRules()
 
-    def display(self) -> List[List[Cell]]:
-        return self._grid.grid
+    def display(self) -> CollectionRowOfCells:
+        return self._grid.all_cells
 
     def tick(self) -> World:
         future_grid = Grid(dimensions=self._grid.dimensions)
@@ -27,8 +28,8 @@ class World:
 
     def __repr__(self) -> str:
         res = ""
-        for cell in self._grid:
-            if cell.is_alive():
+        for square in self._grid:
+            if square.is_alive():
                 res += "O"
             else:
                 res += "X"

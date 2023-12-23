@@ -24,7 +24,6 @@ class MyTestCase(unittest.TestCase):
         grid.register_cell(AliveCell(position=Position(1, 2)))
         return grid
 
-
     def test_something(self):
         w = World(grid=self.create_grid_XOO_XOX())
         sut = w.tick()

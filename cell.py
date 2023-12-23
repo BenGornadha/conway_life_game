@@ -4,10 +4,12 @@ from direction import Direction
 from position import Position
 from abc import ABC, abstractmethod
 
+
 class Cell(ABC):
     @abstractmethod
     def __init__(self):
         self._position: Optional[Position] = None
+
     @property
     def position(self) -> Position:
         return self._position
@@ -20,8 +22,6 @@ class Cell(ABC):
 
     def __eq__(self, other) -> bool:
         return isinstance(other, self.__class__)
-
-
 
 
 class AliveCell(Cell):

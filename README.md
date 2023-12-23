@@ -11,3 +11,4 @@ Regarding the interface I absolutely have no skills so I used Pygame which was f
 ![img.png](resources/img.png)
 
 Feel free to ask any questions or comment anything that would make me a better developer. 
+

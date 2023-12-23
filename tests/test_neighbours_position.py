@@ -1,7 +1,7 @@
 import unittest
 
 from cell import AliveCell
-from neighborhood import Neighborhood
+from alive_counter import Neighborhood
 from position import Position
 
 

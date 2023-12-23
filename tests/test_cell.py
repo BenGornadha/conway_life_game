@@ -1,7 +1,7 @@
 import unittest
 
-from v4.cell import DeadCell, AliveCell
-from v4.position import Position
+from cell import DeadCell, AliveCell
+from position import Position
 
 
 class MyTestCase(unittest.TestCase):
