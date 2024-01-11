@@ -14,7 +14,7 @@ from world import World
 def generate_first_grid(dimension: Dimension):
     grid = Grid(dimensions=dimension)
     for row_idx in range(dimension.number_of_row):
-        for col_idx in range(dimension.num_of_columns):
+        for col_idx in range(dimension.number_of_columns):
             if random.choice(["X", "O"]) == "O":
                 grid.register_cell(cell=AliveCell(position=Position(row_index=row_idx, column_index=col_idx)))
     return grid

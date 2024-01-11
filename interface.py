@@ -15,12 +15,12 @@ class Interface:
         pygame.init()
         self._world_dimension = dimension
         self._height = self._world_dimension.number_of_row * Interface.CELL_SIZE
-        self._width = self._world_dimension.num_of_columns * Interface.CELL_SIZE
+        self._width = self._world_dimension.number_of_columns * Interface.CELL_SIZE
         self._window = pygame.display.set_mode((self._width, self._height))
 
     def display_all_cells(self, all_cells: CollectionRowOfCells) -> None:
         for row_number, row in enumerate(range(self._world_dimension.number_of_row)):
-            for column_number, _ in enumerate(range(self._world_dimension.num_of_columns)):
+            for column_number, _ in enumerate(range(self._world_dimension.number_of_columns)):
                 couleur = Interface.WHITE if all_cells.find_cell_at(
                     Position(row_number, column_number)).is_alive() else Interface.BLACK
 

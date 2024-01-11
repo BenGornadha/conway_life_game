@@ -9,7 +9,7 @@ from position import Position
 
 class CollectionRowOfCells:
     def __init__(self, dimension: Dimension) -> None:
-        self._rows = [RowOfCells(index=index_row, number_of_cells=dimension.num_of_columns) for index_row in
+        self._rows = [RowOfCells(index=index_row, number_of_cells=dimension.number_of_columns) for index_row in
                       range(dimension.number_of_row)]
 
     def __iter__(self):

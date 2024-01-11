@@ -42,14 +42,14 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(Position(3, 0), sut.position)
 
     def test_collection_is_iterable(self):
-        collection_of_rows_cells = CollectionRowOfCells(dimension=Dimension(number_of_row=1, num_of_columns=1))
+        collection_of_rows_cells = CollectionRowOfCells(dimension=Dimension(number_of_row=1, number_of_columns=1))
         an_iterator = iter(collection_of_rows_cells)
         sut = next(an_iterator)
 
         self.assertEqual(RowOfCells(index=0, number_of_cells=1), sut)
 
     def test_collection_iter_gives_row(self):
-        collection_of_rows_cells = CollectionRowOfCells(dimension=Dimension(number_of_row=1, num_of_columns=8))
+        collection_of_rows_cells = CollectionRowOfCells(dimension=Dimension(number_of_row=1, number_of_columns=8))
 
         collection_of_rows_cells.register_alive_at(position=Position(0, 4))
         an_iterator = iter(collection_of_rows_cells)

@@ -8,7 +8,7 @@ from square import Square
 
 
 class Grid:
-    CACHE_NEIGHBOURS = CacheNeighboursPositions()
+    # CACHE_NEIGHBOURS = CacheNeighboursPositions()
 
     def __init__(self, dimensions: Dimension):
         self._dimensions = dimensions
